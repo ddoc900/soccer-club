@@ -1,0 +1,220 @@
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+
+
+/*header*/
+
+
+header {
+    position: fixed;
+    top: 0;
+    right: 2rem;
+    text-align: right;
+    z-index: 10;
+   
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+/*banner*/
+
+
+.banner {
+    display: flex;
+    height: 90vh;
+}
+
+.left, .right {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(57, 57, 57, 0.737);
+}
+
+
+.right {
+    background-image: url(../images/henrique-macedo-8RzMsxk3wgg-unsplash.jpg);
+    opacity: .7;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.left ul {
+    text-align: center;
+    padding: 0;
+    margin: 3rem 0;
+}
+
+.left li {
+    list-style-type: none;
+    padding: 3rem 0;
+}
+
+.left a {
+    text-decoration: none;
+    color:bisque;
+    font-family: 'jara', sans-serif;
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
+.left a:hover {
+    letter-spacing: .5rem;
+}
+
+
+@media only screen and (max-width: 500px) {
+    .right {
+        display: none;
+    }
+
+    .left { 
+        position: relative; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: none;
+    }
+    
+    .left::before {  
+        content: "";
+        background-image: url('../images/henrique-macedo-8RzMsxk3wgg-unsplash.jpg');
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        opacity: .7;
+        z-index: -1;
+    }
+
+    
+}
+
+
+/* leauges */
+
+
+#leauges .container {
+    background-color: rgba(245, 245, 220, 0.694);
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5rem 0;
+}
+
+#leauges .container > * {
+    flex: 1 1 30rem;
+    margin: 2rem;
+    background-color: blue;
+    border-radius: 5px;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-size: cover;
+}
+
+
+.cage {
+    background-image: url(../images/md-mahdi-I3Yygveu0Bo-unsplash.jpg);
+    background-position: center;
+}
+
+.old-man{
+    background-image: url(../images/abigail-keenan-8-s5QuUBtyM-unsplash.jpg);
+    background-position: center;
+}
+
+.indoor {
+    background-image: url(../images/youssef-naddam-gZgIUwpJREg-unsplash.jpg);
+    background-position: bottom;
+}
+
+
+#leauges h2, h4 {
+    text-align: center;
+    font-family: 'jara', sans-serif;
+    color: white;
+    margin: 0;
+}
+
+#leauges h2 {
+    font-size: 2rem;
+}
+
+
+
+
+/* testimonial */
+
+
+#testimonial .container {
+    margin: 15rem 0
+}
+
+#testimonial .container h1 {
+    text-align: center;
+    
+}
+
+/*gellery*/
+
+
+#gallery .container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+#gallery .container img {
+    width: 50%;
+    height: 50%;
+    flex: 1 1
+}
+
+
+/*contact*/
+
+#contact .container {
+    display: flex;
+    padding: 20rem 0;
+    background-color: rgba(82, 82, 81, 0.331);
+}
+
+
+#contact .container > * {
+    width:100%;
+    height: 20rem;
+}
+
+
+#contact .container #map {
+    background-image: url(../images/map.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#contact .container .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#contact .container .info h1, h5{
+    margin: .5rem 0 0 1rem;
+}
